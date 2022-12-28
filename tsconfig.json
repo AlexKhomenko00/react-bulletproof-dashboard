@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "@features/*": ["src/features/*"]
+    },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -13,7 +17,8 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noUnusedLocals": true,
+    "noEmit": false,
     "jsx": "react-jsx"
   },
   "include": ["src"],
