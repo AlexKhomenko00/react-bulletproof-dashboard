@@ -1,5 +1,14 @@
-.a {
-  position: relative;
+:root {
+  --bg-color: #434343;
+  --main-text-color: #fff;
+}
 
-  display: block;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--main-text-color);
+
+  background-color: var(--bg-color);
 }
