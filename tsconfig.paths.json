@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/features/*": ["src/features/*"],
+      "@/constants/*": ["src/constants/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/types/*": ["src/types/*"]
+    }
+  }
+}

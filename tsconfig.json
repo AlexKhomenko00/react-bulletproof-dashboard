@@ -1,12 +1,6 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "baseUrl": ".",
-    "paths": {
-      "@/features/*": ["src/features/*"],
-      "@/constants/*": ["src/constants/*"],
-      "@/lib/*": ["src/lib/*"]
-    },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -26,5 +20,6 @@
   },
 
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "extends": "./tsconfig.paths.json"
 }
